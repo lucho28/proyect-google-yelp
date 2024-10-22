@@ -1,4 +1,3 @@
-![SoyHenry](https://blog.soyhenry.com/content/images/2021/02/HEADER-BLOG-NEGRO-01.jpg)
 # Proyecto Final Henry - StarSight
 
 ![Starsight](./starsight.jpg)
@@ -14,11 +13,11 @@
 
 ## Integrantes
 
-- María José Grecco
-- Esteban Parron
-- Santiago Mejía
-- Joaquín Rubiolo
-- Luis Gonzales
+- [María José Grecco](https://github.com/mpaezgrecco)
+- [Esteban Parron](https://github.com/systemeap)
+- [Santiago Mejía](https://github.com)
+- [Joaquín Rubiolo](https://github.com/joarubiolo)
+- [Luis Gonzales](https://github.com/lucho28)
 
 ## Introducción a StarSight
 
