@@ -13,11 +13,11 @@
 
 ## Integrantes
 
-- [María José Grecco](https://github.com/mpaezgrecco)
-- [Esteban Parron](https://github.com/systemeap)
-- [Santiago Mejía](https://github.com)
-- [Joaquín Rubiolo](https://github.com/joarubiolo)
-- [Luis Gonzales](https://github.com/lucho28)
+- [María José Grecco](https://github.com/mpaezgrecco) - Data Analist
+- [Esteban Parron](https://github.com/systemeap) - Data Analist
+- [Santiago Mejía](https://github.com) - Data Analist
+- [Joaquín Rubiolo](https://github.com/joarubiolo) - Data Scientist
+- [Luis Gonzales](https://github.com/lucho28) - Data Engineer
 
 ## Introducción a StarSight
 
