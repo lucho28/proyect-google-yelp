@@ -66,7 +66,10 @@ Desarrollamos un modelo basado en estos puntos clave para optimizar el negocio y
 
 
 ## Nuestro Modelo
-Nuestra base de datos principal proviene de **Yelp** y **Google Maps**. A partir de esta, realizamos un **Análisis de Datos Exploratorio (EDA)** en el que identificamos las variables más relevantes dentro de los comentarios publicados, utilizando librerías como **Pandas** y **Numpy**.
+Nuestra base de datos principal proviene de **Yelp** y **Google Maps**.A continuacion podras encontrar la fuente de datos principal para la realizacion del proyecto: 
+- [Dataset de Google Maps](https://drive.google.com/drive/folders/1Wf7YkxA0aHI3GpoHc9Nh8_scf5BbD4DA)
+- [Dataset de Yelp!](https://drive.google.com/drive/folders/1TI-SsMnZsNP6t930olEEWbBQdo_yuIZF)
+ A partir de esta, realizamos un **Análisis de Datos Exploratorio (EDA)** en el que identificamos las variables más relevantes dentro de los comentarios publicados, utilizando librerías como **Pandas** y **Numpy**.
 
 <p align="center">
   <img src="https://miro.medium.com/v2/resize:fit:600/1*QGEdhXzbCJsx6w2eeEWISg.png" alt="Logo del Proyecto" width="500">
