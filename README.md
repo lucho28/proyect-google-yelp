@@ -1,6 +1,6 @@
 # Proyecto Final Henry - StarSight
 
-![Starsight](./starsight.jpg)
+![Starsight](Imagenes/starsight.jpg)
 
 ## Índice
 
@@ -57,11 +57,11 @@ Nuestro equipo tiene la capacidad de generar un análisis detallado de muchos fa
 Desarrollamos un modelo basado en estos puntos clave para optimizar el negocio y evitar gastos innecesarios.
 
 <p align="center">
-  <img src="./grafico.jpg" alt="Logo del Proyecto" width="500">
+  <img src="Imagenes/grafico.jpg" alt="Logo del Proyecto" width="500">
 </p>
 
 <p align="center">
-  <img src="./mapa_page-0001.jpg" alt="Logo del Proyecto" width="800">
+  <img src="Imagenes/mapa_page-0001.jpg" alt="Logo del Proyecto" width="800">
 </p>
 
 
