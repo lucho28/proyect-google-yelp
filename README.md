@@ -1,6 +1,6 @@
 # Proyecto Final Henry - StarSight
 
-![Starsight](./starsight.jpg)
+![Starsight](Imagenes/starsight.jpg)
 
 ## Índice
 
@@ -57,11 +57,11 @@ Nuestro equipo tiene la capacidad de generar un análisis detallado de muchos fa
 Desarrollamos un modelo basado en estos puntos clave para optimizar el negocio y evitar gastos innecesarios.
 
 <p align="center">
-  <img src="./grafico.jpg" alt="Logo del Proyecto" width="500">
+  <img src="Imagenes/grafico.jpg" alt="Logo del Proyecto" width="500">
 </p>
 
 <p align="center">
-  <img src="./mapa_page-0001.jpg" alt="Logo del Proyecto" width="800">
+  <img src="Imagenes/mapa_page-0001.jpg" alt="Logo del Proyecto" width="800">
 </p>
 
 
@@ -83,6 +83,15 @@ El análisis proporciona una visión general del dataset, el cual es limpiado y 
   <img src="https://chartexpo.com/blog/wp-content/uploads/2024/09/power-bi-and-aws.jpg" alt="Logo del Proyecto" width="500">
 </p>
 
+Para poder guiarse en el proyecto, puede encontrar los ETL y EDA correspondientes en las carpetas de ./ETL_EDA_GOOGLE y ./ETL_EDA_YELP dentro de este repositorio, dentro de las cuales se encuentran los distintos elementos del dataset procesados y explorados para extraer la mayor cantidad de informacion posible. Para saber los distintos procedimientos que se realizaron de forma resumida puede descargar la documentación que se encuentra en el menu principal del repositorio
+
+<p align="center">
+  <img src="Imagenes/screenshot.png" alt="Logo del Proyecto" width="800">
+</p>
+
+
+## Conclusión
+En esta primera etapa del trabajo consistió en analizar profundamente la información proporcionada para generar una fuente de datos para las etapas posteriores, sin perder la noción de que también se debía buscar insights que puedan cambiar desviar el proyecto del objetivo propuesto, lo que resulto en una constante reforma y replanteos tratando siempre de encontrar la coherencia de los datos con el proyecto. La meta final siempre fue buscar una satisfacción completa del cliente junto con conformación de un equipo totalmente acoplado en cuanto a roles adoptados por sus integrantes
 
 
 
