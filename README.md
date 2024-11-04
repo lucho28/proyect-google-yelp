@@ -2,7 +2,7 @@
 
 ![Starsight](Imagenes/starsight.jpg)
 
-## ** 📋 Índice**
+## **📋 Índice**
 
 1. [Integrantes](#Integrantes)
 2. [Introduccion a StarSight](#Introducción-a-StarSight)
@@ -37,7 +37,7 @@ Con nuestro enfoque personalizado y analítico, StarSight se posiciona como el a
 
 Nuestro cliente nos ha solicitado un análisis enfocado en restaurantes en el estado de Florida, un mercado altamente competitivo donde las opiniones de los consumidores juegan un rol crucial. Este proyecto aprovechará las reseñas en línea para ofrecer insights estratégicos y recomendaciones prácticas, ayudando a nuestros clientes a mejorar la experiencia del cliente y fortalecer su posición en el mercado.
 
-## ** 🚀 Desarrollo del proyecto**
+## **🚀 Desarrollo del proyecto**
 ![desarrollo](https://netlok.com/wp-content/uploads/egencia-business-travel-banner-solutions.jpg)
 
 Comenzamos identificando las diferentes problemáticas que enfrenta la industria gastronómica con servicio directo al consumidor final. Algunos puntos clave a tener en cuenta son:
@@ -61,7 +61,7 @@ Utilizamos diversas herramientas para abordar estas dificultades, considerando f
 
 4. Desarrollar un modelo predictivo para optimizar la selección de áreas estratégicas para la apertura de nuevos restaurantes.
 
-**🌟 Objetivos Comunes**
+### **🌟 Objetivos Comunes**
 
 1. **Extracción de datos desde la fuente:** Utilizar los datos proporcionadas de Yelp y Google Maps, así como la recolección de datos propia y el scrapping para obtener variables demográficas.
 
@@ -91,7 +91,7 @@ Presentación visual de los resultados de las recomendaciones.
  <!-- KPI section -->
 ## **📊 KPI´s:**
 
-• **Aumentar el promedio de horas de operación:** 
+1. **Aumentar el promedio de horas de operación:** 
 * **Descripción**: Mide el promedio de horas semanales que operan los restaurantes de comida americana en Florida.
 
 * **Objetivo**: Aumentar este promedio a 40 horas semanales en un periodo de 2 años.
@@ -101,7 +101,7 @@ $$
 $$
 <br>
 
-• **Aumento estandar de 4 estrellas:** 
+2. **Aumento estandar de 4 estrellas:** 
 * **Descripción**:Calcula el promedio de estrellas o calificación general recibida por los restaurantes de comida americana.
 * **Objetivo**: Alcanzar un promedio de 4 estrellas en el transcurso de un año.
 
@@ -111,7 +111,7 @@ $$
 
 <br>
 
-• **Incrementar el promedio de interacciones por estado:** 
+3. **Incrementar el promedio de interacciones por estado:** 
 * **Descripción**:Mide la cantidad promedio de interacciones (reseñas, calificaciones, etc.) que reciben los restaurantes en cada estado, con enfoque en Florida.
 * **Objetivo**: Incrementar este promedio en el estado de Florida para el próximo año.
 
