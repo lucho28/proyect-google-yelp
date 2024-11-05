@@ -169,5 +169,46 @@ Para poder guiarse en el proyecto, puede encontrar los ETL y EDA correspondiente
 En esta primera etapa del trabajo consistió en analizar profundamente la información proporcionada para generar una fuente de datos para las etapas posteriores, sin perder la noción de que también se debía buscar insights que puedan cambiar desviar el proyecto del objetivo propuesto, lo que resulto en una constante reforma y replanteos tratando siempre de encontrar la coherencia de los datos con el proyecto. La meta final siempre fue buscar una satisfacción completa del cliente junto con conformación de un equipo totalmente acoplado en cuanto a roles adoptados por sus integrantes
 
 
+## Pipeline
+
+1. Carga de Archivos CSV en S3 (Fuente de Datos)
+
+El proceso comienza con la carga de archivos CSV en un bucket de Amazon S3. Estos archivos pueden provenir de múltiples fuentes de datos, ya sea de procesos manuales o automatizados que recolectan y transfieren datos a S3. Al centralizar la carga en S3, se proporciona un repositorio accesible y seguro para almacenar datos sin procesar.
+
+2. Detección Automática de Nuevas Cargas
+
+Se configura una notificación de eventos en el bucket de S3 que desencadena una función Lambda cada vez que se carga un nuevo archivo. Este evento de S3 puede ser programado para detectar únicamente cargas completas, evitando la activación prematura durante una carga en progreso.
+
+3. Verificación de Archivos por Nombre
+
+La función Lambda que se activa primero realiza una verificación en la base de datos MySQL en Amazon RDS. Consulta una tabla específica de registros de archivos para determinar si el archivo recién cargado ya ha sido procesado. Este paso es crucial para evitar duplicados y garantizar la integridad de los datos.
+
+Estrategia Escalable: Puedes escalar este proceso creando funciones Lambda específicas para diferentes tablas de la base de datos. Esto permite que el sistema se adapte a un mayor número de tipos de datos y formatos de archivo sin necesidad de rediseñar todo el pipeline.
+
+4. Invocación de Función Lambda para Procesamiento y Carga
+
+Si la función Lambda de verificación determina que el archivo es nuevo, se activa una segunda función Lambda encargada de procesar y cargar los datos. Esta función accede al archivo en S3 y lo prepara para su inserción en la base de datos. Durante este proceso, se aplican ciertos controles para asegurar la integridad de los datos:
+
+* Control de Duplicados: La función está diseñada para evitar la inserción de datos repetidos en la base de datos. Si encuentra registros que ya existen, los ignora o actualiza solo ciertos campos, garantizando que la información almacenada sea precisa y esté al día.
+* Transformaciones de Datos: Si es necesario, los datos se pueden ajustar para que sean consistentes y estén listos para la carga.
+* Validaciones Básicas: Se realizan comprobaciones rápidas para confirmar que los datos cumplen con las expectativas antes de cargarse.
+De esta manera, la función asegura que solo se agreguen datos nuevos o actualizados, sin sobrescribir información valiosa de manera innecesaria. Al final, los datos ingresan a la base de datos en un estado óptimo, listos para ser utilizados en análisis y reportes.
+
+5. Carga en la Base de Datos RDS (Destino de Datos)
+
+La base de datos MySQL en Amazon RDS es el destino final de los datos procesados. Al usar una base de datos gestionada, se garantiza alta disponibilidad, recuperación ante fallos y escalabilidad. Además, se pueden optimizar las consultas mediante índices y particiones para mejorar el rendimiento de lectura y escritura.
+
+6. Manejo de Errores y Monitoreo
+
+Implementa un sistema de logging robusto en cada función Lambda para capturar detalles de errores y procesos. Puedes integrar AWS CloudWatch Logs para monitorear las funciones y recibir alertas en caso de fallos. Esto facilita la detección y solución de problemas, asegurando la continuidad del pipeline.
+
+7. Escalabilidad y Flexibilidad
+
+La arquitectura basada en funciones Lambda permite que el pipeline sea altamente escalable. Se pueden agregar nuevas funciones Lambda para manejar diferentes tipos de datos o tablas en la base de datos sin modificar la estructura principal del pipeline. Además, al trabajar con funciones sin servidor, la solución se escala automáticamente según la carga, lo que garantiza un uso eficiente de recursos y costos.
+
+8. Optimización de Costos
+
+Monitorea el uso de Lambda, S3 y RDS para mantener los costos bajo control. Considera la posibilidad de programar las funciones Lambda para ejecutarse con memoria y tiempo de ejecución optimizados y revisar las métricas de rendimiento de RDS para ajustar el tamaño de la instancia y las configuraciones de almacenamiento.
+
 
 
