@@ -8,10 +8,13 @@
 2. [Introduccion a StarSight](#Introducción-a-StarSight)
 3. [Contexto](#contexto)
 4. [Desarrollo del proyecto](#Desarrollo-del-proyecto)
-5. [Objetivos](#-objetivos)
-6. [Lo que Hacemos](#Lo-que-Hacemos)
-7. [Alcance del proyecto](#-alcance-del-proyecto)
-5. [Nuestro Modelo](#Nuestro-Modelo)
+5. [Alcance del proyecto](#-alcance-del-proyecto)
+6. [Objetivos](#-objetivos)
+7. [KPI'S](#-kpis)
+8. [Flujo de trabajo](#-flujo-de-trabajo)
+9. [Diagrama ER](#diagrama-e-r)
+10. [Metodologia](#-metodología-del-trabajo)
+11. [Conclusiones](#Conclusiones)
 
 
 ## **Integrantes**
@@ -50,6 +53,18 @@ Comenzamos identificando las diferentes problemáticas que enfrenta la industria
 
 Utilizamos diversas herramientas para abordar estas dificultades, considerando factores del mercado actual, y buscando oportunidades para fortalecer el negocio y evitar amenazas de la competencia.
 
+<!-- Alcance section -->
+## **🌐 Alcance del proyecto**
+
+**Extracción de Datos:** Recopilación y utilización de datos provenientes de plataformas de reseñas como Google Maps y Yelp.
+
+**Análisis de Datos:** Implementación de técnicas avanzadas de Análisis de Datos y Aprendizaje Automático para examinar las reseñas de los usuarios.
+El análisis permitirá al sistema identificar tendencias y generar recomendaciones consistentes.
+
+**Cobertura Geográfica:** Enfoque específico en los establecimientos gastronómicos ubicados en el estado de Florida en los Estados Unidos.
+
+**Visualización y Sistema de Recomendación:** Desarrollo de una interfaz de usuario intuitiva que permita a los clientes seleccionar sus criterios para la búsqueda de restaurantes.
+Presentación visual de los resultados de las recomendaciones.
 <!-- objetivos section -->
 ## **🎯Objetivos**
 
@@ -74,19 +89,6 @@ Utilizamos diversas herramientas para abordar estas dificultades, considerando f
 5. **Documentación:** Detallar exhaustivamente todo el proceso de ETL, incluyendo fuentes de datos, transformaciones realizadas y criterios de calidad aplicados, para facilitar la replicabilidad y el mantenimiento del proceso.
 
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
-
-<!-- Alcance section -->
-## **🌐 Alcance del proyecto**
-
-**Extracción de Datos:** Recopilación y utilización de datos provenientes de plataformas de reseñas como Google Maps y Yelp.
-
-**Análisis de Datos:** Implementación de técnicas avanzadas de Análisis de Datos y Aprendizaje Automático para examinar las reseñas de los usuarios.
-El análisis permitirá al sistema identificar tendencias y generar recomendaciones consistentes.
-
-**Cobertura Geográfica:** Enfoque específico en los establecimientos gastronómicos ubicados en el estado de Florida en los Estados Unidos.
-
-**Visualización y Sistema de Recomendación:** Desarrollo de una interfaz de usuario intuitiva que permita a los clientes seleccionar sus criterios para la búsqueda de restaurantes.
-Presentación visual de los resultados de las recomendaciones.
 
  <!-- KPI section -->
 ## **📊 KPI´s:**
@@ -121,15 +123,20 @@ $$
 
 <br>
 
-## Lo que Hacemos
+<!-- flujo section -->
+## **🔧 Flujo de Trabajo**
 
-Nuestro equipo tiene la capacidad de generar un análisis detallado de muchos factores dentro de su nicho de mercado. A continuación, mencionamos nuestros aspectos más importantes:
+### 1. ETL 
 
-- **Análisis completo** basado en los comentarios y opiniones de los usuarios en plataformas populares como Yelp y Google Maps.
-- **Identificación de tendencias** de crecimiento o caídas en el sector gastronómico.
-- **Propuesta de las mejores ubicaciones** para nuevos negocios.
-  
-Desarrollamos un modelo basado en estos puntos clave para optimizar el negocio y evitar gastos innecesarios.
+Nuestra base de datos principal proviene de **Yelp** y **Google Maps**.
+A continuacion podras encontrar la fuente de datos principal para la realizacion del proyecto: 
+
+- [Dataset de Google Maps](https://drive.google.com/drive/folders/1Wf7YkxA0aHI3GpoHc9Nh8_scf5BbD4DA)
+- [Dataset de Yelp!](https://drive.google.com/drive/folders/1TI-SsMnZsNP6t930olEEWbBQdo_yuIZF)
+
+Al recibir los datos en bruto, se lleva a cabo un trabajo manual y estandarizado de ETL utilizando Python y las librerías pertinentes.Este proceso incluye la eliminación de columnas irrelevantes, desanidamiento de columnas si es necesario, manejo de valores nulos y duplicados, normalización de tipos de datos y nombres de columnas según un esquema estandarizado.
+Posteriormente realizamos un **Análisis de Datos Exploratorio (EDA)** en el que identificamos las variables más relevantes dentro de los comentarios publicados, utilizando librerías como **Pandas** y **Numpy**.
+El análisis proporciona una visión general del dataset, el cual es limpiado y procesado para obtener métricas básicas. 
 
 <p align="center">
   <img src="Imagenes/grafico.jpg" alt="Logo del Proyecto" width="500">
@@ -139,37 +146,13 @@ Desarrollamos un modelo basado en estos puntos clave para optimizar el negocio y
   <img src="Imagenes/mapa_page-0001.jpg" alt="Logo del Proyecto" width="800">
 </p>
 
-## Nuestro Modelo
-
-Nuestra base de datos principal proviene de **Yelp** y **Google Maps**.A continuacion podras encontrar la fuente de datos principal para la realizacion del proyecto: 
-
-- [Dataset de Google Maps](https://drive.google.com/drive/folders/1Wf7YkxA0aHI3GpoHc9Nh8_scf5BbD4DA)
-- [Dataset de Yelp!](https://drive.google.com/drive/folders/1TI-SsMnZsNP6t930olEEWbBQdo_yuIZF)
-
- A partir de esta, realizamos un **Análisis de Datos Exploratorio (EDA)** en el que identificamos las variables más relevantes dentro de los comentarios publicados, utilizando librerías como **Pandas** y **Numpy**.
-
-<p align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:600/1*QGEdhXzbCJsx6w2eeEWISg.png" alt="Logo del Proyecto" width="500">
-</p>
-
-El análisis proporciona una visión general del dataset, el cual es limpiado y procesado para obtener métricas básicas. Luego, identificamos factores de interés para profundizar en su análisis. Finalmente, visualizamos los resultados a través de gráficos en **Power BI**. También utilizamos **AWS** para facilitar la disponibilidad de nuestros archivos y automatizar la carga de datos.
-
-<p align="center">
-  <img src="https://chartexpo.com/blog/wp-content/uploads/2024/09/power-bi-and-aws.jpg" alt="Logo del Proyecto" width="500">
-</p>
-
-Para poder guiarse en el proyecto, puede encontrar los ETL y EDA correspondientes en las carpetas de ./ETL_EDA_GOOGLE y ./ETL_EDA_YELP dentro de este repositorio, dentro de las cuales se encuentran los distintos elementos del dataset procesados y explorados para extraer la mayor cantidad de informacion posible. Para saber los distintos procedimientos que se realizaron de forma resumida puede descargar la documentación que se encuentra en el menu principal del repositorio
+Para poder guiarse en el proyecto, puede encontrar los ETL y EDA correspondientes en las carpetas de ./ETL_EDA_GOOGLE y ./ETL_EDA_YELP dentro de este repositorio, dentro de las cuales se encuentran los distintos elementos del dataset procesados y explorados para extraer la mayor cantidad de informacion posible. 
 
 <p align="center">
   <img src="Imagenes/screenshot.png" alt="Logo del Proyecto" width="800">
 </p>
 
-
-## Conclusión
-En esta primera etapa del trabajo consistió en analizar profundamente la información proporcionada para generar una fuente de datos para las etapas posteriores, sin perder la noción de que también se debía buscar insights que puedan cambiar desviar el proyecto del objetivo propuesto, lo que resulto en una constante reforma y replanteos tratando siempre de encontrar la coherencia de los datos con el proyecto. La meta final siempre fue buscar una satisfacción completa del cliente junto con conformación de un equipo totalmente acoplado en cuanto a roles adoptados por sus integrantes
-
-
-## Pipeline
+### Pipeline
 
 1. Carga de Archivos CSV en S3 (Fuente de Datos)
 
@@ -209,6 +192,43 @@ La arquitectura basada en funciones Lambda permite que el pipeline sea altamente
 8. Optimización de Costos
 
 Monitorea el uso de Lambda, S3 y RDS para mantener los costos bajo control. Considera la posibilidad de programar las funciones Lambda para ejecutarse con memoria y tiempo de ejecución optimizados y revisar las métricas de rendimiento de RDS para ajustar el tamaño de la instancia y las configuraciones de almacenamiento.
+
+- **Demostracion carga incremental :**
+  [Video demostracion]()
+
+## **Diagrama E-R**
+
+![Diagrama ER detallado]()
+
+<!-- metodología section -->
+## **🔧 Metodología del Trabajo**
+
+Para este proyecto, se implementará la metodología Scrum, la cual divide el trabajo en partes pequeñas y manejables llamadas "sprints". Cada sprint tiene una duración de dos semana, durante las cuales el equipo se enfocará en completar un conjunto específico de tareas. Al final de cada sprint, se llevará a cabo una reunión de revisión de sprint (sprint review meeting) donde se realizará una demostración de los entregables desarrollados, con el objetivo de recibir retroalimentación y ajustar la planificación para el siguiente sprint según lo aprendido. Además, se llevarán a cabo reuniones de seguimiento (Daily Standup) para discutir el progreso y abordar posibles inconvenientes. Este enfoque permite una adaptación continua a medida que el equipo avanza.
+Detalles de los Sprints:
+**Sprint 1 - Comprensión del Negocio y de los Datos:**
+Duración: 2 semanas.
+Objetivo: Comprender en profundidad el negocio y los datos involucrados en el proyecto.
+Actividades:
+* Revisión y análisis detallado de los requisitos del cliente.
+* Investigación sobre las plataformas de reseñas como Google Maps y Yelp.
+* Identificación de posibles fuentes de datos y su relevancia para el proyecto.
+Establecimiento de objetivos claros para el proyecto y definición de las métricas de éxito.
+**Sprint 2 - Preparación de los Datos y Modelado:**
+Duración: 2 semanas.
+Objetivo: Preparar los datos y realizar el modelado necesario para el desarrollo del sistema de recomendación.
+Actividades:
+* Extracción de datos de las fuentes identificadas.
+* Limpieza y preparación de los datos para su posterior análisis.
+* Aplicación de técnicas de modelado de datos para generar insights preliminares.
+* Identificación de posibles problemas o desafíos en los datos y su resolución.
+
+
+
+## Conclusión
+En esta primera etapa del trabajo consistió en analizar profundamente la información proporcionada para generar una fuente de datos para las etapas posteriores, sin perder la noción de que también se debía buscar insights que puedan cambiar desviar el proyecto del objetivo propuesto, lo que resulto en una constante reforma y replanteos tratando siempre de encontrar la coherencia de los datos con el proyecto. La meta final siempre fue buscar una satisfacción completa del cliente junto con conformación de un equipo totalmente acoplado en cuanto a roles adoptados por sus integrantes
+
+
+
 
 
 
