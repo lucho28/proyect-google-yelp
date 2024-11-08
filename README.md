@@ -87,9 +87,6 @@ Presentación visual de los resultados de las recomendaciones.
 4. **Automatización:** Automatizar en la medida de lo posible el proceso de extracción, transformación y carga (ETL) para mejorar la eficiencia y reducir los riesgos de errores manuales.
 
 5. **Documentación:** Detallar exhaustivamente todo el proceso de ETL, incluyendo fuentes de datos, transformaciones realizadas y criterios de calidad aplicados, para facilitar la replicabilidad y el mantenimiento del proceso.
-
-<p align="right">(<a href="#readme-top">volver arriba</a>)</p>
-
  <!-- KPI section -->
 ## **📊 KPI´s:**
 
@@ -122,7 +119,6 @@ $$
 $$
 
 <br>
-
 <!-- flujo section -->
 ## **🔧 Flujo de Trabajo**
 
