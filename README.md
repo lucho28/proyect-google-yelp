@@ -113,12 +113,12 @@ $$
 
 <br>
 
-3. **Incrementar el promedio de interacciones por estado:** 
-* **Descripción**:Mide la cantidad promedio de interacciones (reseñas, calificaciones, etc.) que reciben los restaurantes en cada estado, con enfoque en Florida.
-* **Objetivo**: Incrementar este promedio en el estado de Florida para el próximo año.
+3. **Incrementar el promedio de estrellas por ciudad:** 
+* **Descripción**:Medir el promedio de estrellas o calificación general recibida por los restaurantes de comida americana en cada ciudad del estado de Florida.
+* **Objetivo**: Incrementar este promedio a 4 estrellas para el próximo año.
 
 $$
-\mathrm{KPI} = \frac{\sum \text{Interacciones en florida}}{\text{Total de restaurantes}}
+\mathrm{KPI} = \frac{\sum \text{calificacion de estrellas por ciudad}}{\text{Total de restaurantes}}
 $$
 
 <br>
@@ -194,41 +194,45 @@ La arquitectura basada en funciones Lambda permite que el pipeline sea altamente
 Monitorea el uso de Lambda, S3 y RDS para mantener los costos bajo control. Considera la posibilidad de programar las funciones Lambda para ejecutarse con memoria y tiempo de ejecución optimizados y revisar las métricas de rendimiento de RDS para ajustar el tamaño de la instancia y las configuraciones de almacenamiento.
 
 - **Demostracion carga incremental :**
-  [Video demostracion]()
+  [Video demostracion](Imagenes/video.mp4)
 
 ## **Diagrama E-R**
 
-![Diagrama ER detallado]()
+<p align="center">
+  <img src="Imagenes/DiagramaER.jpg" alt="Diagrama ER" width="500">
+</p>
 
 <!-- metodología section -->
 ## **🔧 Metodología del Trabajo**
-
 Para este proyecto, se implementará la metodología Scrum, la cual divide el trabajo en partes pequeñas y manejables llamadas "sprints". Cada sprint tiene una duración de dos semana, durante las cuales el equipo se enfocará en completar un conjunto específico de tareas. Al final de cada sprint, se llevará a cabo una reunión de revisión de sprint (sprint review meeting) donde se realizará una demostración de los entregables desarrollados, con el objetivo de recibir retroalimentación y ajustar la planificación para el siguiente sprint según lo aprendido. Además, se llevarán a cabo reuniones de seguimiento (Daily Standup) para discutir el progreso y abordar posibles inconvenientes. Este enfoque permite una adaptación continua a medida que el equipo avanza.
 Detalles de los Sprints:
-**Sprint 1 - Comprensión del Negocio y de los Datos:**
+
+### 1. **Sprint 1 - Comprensión del Negocio y de los Datos:**
 Duración: 2 semanas.
 Objetivo: Comprender en profundidad el negocio y los datos involucrados en el proyecto.
 Actividades:
-* Revisión y análisis detallado de los requisitos del cliente.
-* Investigación sobre las plataformas de reseñas como Google Maps y Yelp.
-* Identificación de posibles fuentes de datos y su relevancia para el proyecto.
-Establecimiento de objetivos claros para el proyecto y definición de las métricas de éxito.
-**Sprint 2 - Preparación de los Datos y Modelado:**
+- Revisión y análisis detallado de los requisitos del cliente.
+- Investigación sobre las plataformas de reseñas como Google Maps y Yelp.
+- Identificación de posibles fuentes de datos y su relevancia para el proyecto.
+- Establecimiento de objetivos claros para el proyecto y definición de las métricas de éxito.
+
+### 2. **Sprint 2 - Preparación de los Datos y Modelado:**
 Duración: 2 semanas.
 Objetivo: Preparar los datos y realizar el modelado necesario para el desarrollo del sistema de recomendación.
 Actividades:
-* Extracción de datos de las fuentes identificadas.
-* Limpieza y preparación de los datos para su posterior análisis.
-* Aplicación de técnicas de modelado de datos para generar insights preliminares.
-* Identificación de posibles problemas o desafíos en los datos y su resolución.
+- Extracción de datos de las fuentes identificadas.
+- Limpieza y preparación de los datos para su posterior análisis.
+- Aplicación de técnicas de modelado de datos para generar insights preliminares.
+- Identificación de posibles problemas o desafíos en los datos y su resolución.
 
-
-
-## Conclusión
-En esta primera etapa del trabajo consistió en analizar profundamente la información proporcionada para generar una fuente de datos para las etapas posteriores, sin perder la noción de que también se debía buscar insights que puedan cambiar desviar el proyecto del objetivo propuesto, lo que resulto en una constante reforma y replanteos tratando siempre de encontrar la coherencia de los datos con el proyecto. La meta final siempre fue buscar una satisfacción completa del cliente junto con conformación de un equipo totalmente acoplado en cuanto a roles adoptados por sus integrantes
-
-
-
+## **Conclusiones**
+1. El análisis del mercado gastronómico en el estado de Florida ha permitido identificar patrones de comportamiento de los consumidores y el nivel de competitividad entre los restaurantes de comida americana. Este entendimiento es clave para determinar cómo se distribuyen estos negocios, cuáles son sus características más comunes y qué tipo de consumidores atraen, lo cual resulta fundamental para la toma de decisiones estratégicas.
+2. A partir de los datos obtenidos de Yelp y Google Maps, se logró identificar una gran cantidad de restaurantes de comida americana en Florida, así como analizar sus ubicaciones, popularidad y factores diferenciadores. Esto no solo aporta una visión general de su presencia en el mercado, sino también de las oportunidades y desafíos que enfrentan para captar y retener a los clientes en un sector tan competitivo.
+3. El análisis de diferentes escenarios ha permitido evaluar áreas con potencial de crecimiento en el sector gastronómico de Florida. Este estudio revela zonas estratégicas donde la demanda de opciones gastronómicas podría estar insatisfecha, sugiriendo oportunidades para que nuevos restaurantes capturen un mercado desatendido y contribuyan a la diversificación del sector.
+4. El desarrollo de un modelo predictivo facilita la identificación de áreas estratégicas para la apertura de nuevos restaurantes, optimizando los recursos y minimizando el riesgo de inversión. Con este modelo, es posible proyectar la probabilidad de éxito en distintas ubicaciones y orientar mejor las decisiones de expansión.
+5. La implementación de un proceso de carga incremental en AWS asegura que los datos estén disponibles en la nube de manera segura y eficiente. Esto permite un acceso centralizado y facilita el análisis colaborativo, mejorando la agilidad en la toma de decisiones y optimizando el uso de los datos a lo largo del proyecto.
+6. La automatización del proceso de ETL (Extracción, Transformación y Carga) ha mejorado significativamente la eficiencia del proyecto, al reducir los riesgos de errores manuales y optimizar el tiempo del equipo. Esta automatización también permite una mayor escalabilidad del proceso, facilitando futuras actualizaciones y expansiones de datos.
+7. Durante el análisis inicial, el equipo mantuvo una constante flexibilidad para adaptarse a nuevos insights o descubrimientos en los datos, lo cual fue esencial para mantener la alineación con los objetivos del proyecto. Este enfoque permitió no solo cumplir con la visión inicial, sino también ajustar la dirección del proyecto para maximizar la satisfacción del cliente y la efectividad del equipo.
 
 
 
