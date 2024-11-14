@@ -211,11 +211,11 @@ Monitorea el uso de Lambda, S3 y RDS para mantener los costos bajo control. Cons
 
 <!--Dashboard PowerBI -->
 
+## **DashBoard Interactivo de Restaurantes en Florida** 📊
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0fd625d3-10bb-471c-b3e7-ad418b65ab6f" alt="DALL·E 2024-09-27 16 09 45 - An illustration representing data visualization in Power BI">
 </p>
-
-## **DashBoard Interactivo de Restaurantes en Florida** 📊
 
 Este proyecto consiste en un dashboard interactivo desarrollado en Power BI, diseñado para analizar y visualizar datos de restaurantes en Yelp y Google Maps. El dashboard muestra información clave, como la calificación de estrellas, la ubicación de los restaurantes por ciudad, y otros indicadores importantes de rendimiento (KPI) relacionados con la actividad de los usuarios. Los datos provienen de una base de datos de AWS y están diseñados para ofrecer insights sobre el estado de los negocios y la participación de los usuarios en la plataforma de Yelp y Google Maps.
 
