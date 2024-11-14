@@ -233,13 +233,17 @@ El DashBoard consta de tres paginas con las siguientes funciones:
 
 ### Ilustración 
 
-![KPI](https://github.com/user-attachments/assets/c19a1a70-2b14-454e-b1d6-cfb93d28fee6)
-![Locales](https://github.com/user-attachments/assets/b3b1e47d-c9a0-4cfc-ae04-251c8d73894f)
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/0625e6fc-2d9d-4b44-a50c-8fed132fa462" alt="Interacciones">
+<p align="right">
+  <img src="https://github.com/user-attachments/assets/c19a1a70-2b14-454e-b1d6-cfb93d28fee6" alt="KPI" width=800px>
 </p>
 
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/b3b1e47d-c9a0-4cfc-ae04-251c8d73894f" alt="Locales" width=800px>
+</p>
+
+<p align="right">
+  <img src="https://github.com/user-attachments/assets/0625e6fc-2d9d-4b44-a50c-8fed132fa462" alt="Interacciones" width=800px>
+</p>
 
 <!-- metodología section -->
 ## **🔧 Metodología del Trabajo**
