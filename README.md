@@ -4,17 +4,27 @@
 
 ## **📋 Índice**
 
-1. [Integrantes](#Integrantes)
-2. [Introduccion a StarSight](#Introducción-a-StarSight)
-3. [Contexto](#contexto)
-4. [Desarrollo del proyecto](#Desarrollo-del-proyecto)
-5. [Alcance del proyecto](#-alcance-del-proyecto)
-6. [Objetivos](#-objetivos)
-7. [KPI'S](#-kpis)
-8. [Flujo de trabajo](#-flujo-de-trabajo)
-9. [Diagrama ER](#diagrama-e-r)
-10. [Metodologia](#-metodología-del-trabajo)
-11. [Conclusiones](#Conclusiones)
+- [**📋 Índice**](#-índice)
+- [**Integrantes**](#integrantes)
+- [**Introducción a StarSight**](#introducción-a-starsight)
+- [**Contexto**](#contexto)
+- [**🚀 Desarrollo del proyecto**](#-desarrollo-del-proyecto)
+- [**🌐 Alcance del proyecto**](#-alcance-del-proyecto)
+- [**🎯Objetivos**](#objetivos)
+  - [**🌟 Objetivos Comunes**](#-objetivos-comunes)
+- [**📊 KPI´s:**](#-kpis)
+- [**🔧 Flujo de Trabajo**](#-flujo-de-trabajo)
+  - [1. ETL](#1-etl)
+  - [Pipeline](#pipeline)
+- [**Diagrama E-R**](#diagrama-e-r)
+- [**DashBoard Interactivo de Restaurantes en Florida** 📊](#dashboard-interactivo-de-restaurantes-en-florida-)
+  - [Caracteristicas Principales](#caracteristicas-principales)
+  - [Requerimientos del Proyecto:](#requerimientos-del-proyecto)
+  - [Ilustración](#ilustración)
+- [**🔧 Metodología del Trabajo**](#-metodología-del-trabajo)
+  - [1. **Sprint 1 - Comprensión del Negocio y de los Datos:**](#1-sprint-1---comprensión-del-negocio-y-de-los-datos)
+  - [2. **Sprint 2 - Preparación de los Datos y Modelado:**](#2-sprint-2---preparación-de-los-datos-y-modelado)
+- [**Conclusiones**](#conclusiones)
 
 
 ## **Integrantes**
@@ -198,6 +208,38 @@ Monitorea el uso de Lambda, S3 y RDS para mantener los costos bajo control. Cons
 <p align="center">
   <img src="Imagenes/DiagramaER.jpg" alt="Diagrama ER" width="500">
 </p>
+
+<!--Dashboard PowerBI -->
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0fd625d3-10bb-471c-b3e7-ad418b65ab6f" alt="DALL·E 2024-09-27 16 09 45 - An illustration representing data visualization in Power BI">
+</p>
+
+## **DashBoard Interactivo de Restaurantes en Florida** 📊
+
+Este proyecto consiste en un dashboard interactivo desarrollado en Power BI, diseñado para analizar y visualizar datos de restaurantes en Yelp y Google Maps. El dashboard muestra información clave, como la calificación de estrellas, la ubicación de los restaurantes por ciudad, y otros indicadores importantes de rendimiento (KPI) relacionados con la actividad de los usuarios. Los datos provienen de una base de datos de AWS y están diseñados para ofrecer insights sobre el estado de los negocios y la participación de los usuarios en la plataforma de Yelp y Google Maps.
+
+### Caracteristicas Principales
+El DashBoard consta de tres paginas con las siguientes funciones:
+
+- **Indicadores Clave de Rendimiento:** Esta sección del dashboard presenta los KPI más relevantes para identificar la ubicación ideal para un nuevo restaurante en Florida.
+- **Estado de los negocios en Florida:** Proporciona un análisis especifico de los restaurantes como saber cuantos locales estan abiertos y cuentos reciben tarjetas de credito en cada ciudad de Florida.
+- **Resumen de interacciones y participación:** Visualiza el nivel de participación de los usuarios en diferentes años en el estado de florida, además se observa la cantidad de comentarios hasta el 2021 y su total de usuarios.
+
+### Requerimientos del Proyecto:
+- Power BI Desktop (necesario para cargar y visualizar el dashboard)
+- Descargar el archivo de [Google_Yelp.pibx](https://drive.google.com/drive/folders/1VM61uOueptbLITQOVv21ClOmhPJxYNs5?usp=sharing) aqui 
+- En caso de imprevisto con los datos descargar los Datasets ubicados en el ETL
+
+### Ilustración 
+
+![KPI](https://github.com/user-attachments/assets/c19a1a70-2b14-454e-b1d6-cfb93d28fee6)
+![Locales](https://github.com/user-attachments/assets/b3b1e47d-c9a0-4cfc-ae04-251c8d73894f)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0625e6fc-2d9d-4b44-a50c-8fed132fa462" alt="Interacciones">
+</p>
+
 
 <!-- metodología section -->
 ## **🔧 Metodología del Trabajo**
