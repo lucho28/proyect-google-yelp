@@ -21,7 +21,7 @@
   - [Caracteristicas Principales](#caracteristicas-principales)
   - [Requerimientos del Proyecto:](#requerimientos-del-proyecto)
   - [Ilustración](#ilustración)
-- [**Modelo de recomendacion0](#modelo-de-recomendacion)
+- [**Modelo de recomendacion**](#modelo-de-recomendacion)
 - [**🔧 Metodología del Trabajo**](#-metodología-del-trabajo)
   - [1. **Sprint 1 - Comprensión del Negocio y de los Datos:**](#1-sprint-1---comprensión-del-negocio-y-de-los-datos)
   - [2. **Sprint 2 - Preparación de los Datos y Modelado:**](#2-sprint-2---preparación-de-los-datos-y-modelado)
