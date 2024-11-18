@@ -21,6 +21,7 @@
   - [Caracteristicas Principales](#caracteristicas-principales)
   - [Requerimientos del Proyecto:](#requerimientos-del-proyecto)
   - [Ilustración](#ilustración)
+- [**Modelo de recomendacion0](#modelo-de-recomendacion)
 - [**🔧 Metodología del Trabajo**](#-metodología-del-trabajo)
   - [1. **Sprint 1 - Comprensión del Negocio y de los Datos:**](#1-sprint-1---comprensión-del-negocio-y-de-los-datos)
   - [2. **Sprint 2 - Preparación de los Datos y Modelado:**](#2-sprint-2---preparación-de-los-datos-y-modelado)
@@ -159,7 +160,7 @@ Para poder guiarse en el proyecto, puede encontrar los ETL y EDA correspondiente
   <img src="Imagenes/screenshot.png" alt="Logo del Proyecto" width="800">
 </p>
 
-### Pipeline
+### 2. Pipeline
 
 1. Carga de Archivos CSV en S3 (Fuente de Datos)
 
@@ -245,6 +246,9 @@ El DashBoard consta de tres paginas con las siguientes funciones:
   <img src="https://github.com/user-attachments/assets/0625e6fc-2d9d-4b44-a50c-8fed132fa462" alt="Interacciones" width=800px>
 </p>
 
+## **Modelo de recomendacion** 
+
+
 <!-- metodología section -->
 ## **🔧 Metodología del Trabajo**
 Para este proyecto, se implementará la metodología Scrum, la cual divide el trabajo en partes pequeñas y manejables llamadas "sprints". Cada sprint tiene una duración de dos semana, durante las cuales el equipo se enfocará en completar un conjunto específico de tareas. Al final de cada sprint, se llevará a cabo una reunión de revisión de sprint (sprint review meeting) donde se realizará una demostración de los entregables desarrollados, con el objetivo de recibir retroalimentación y ajustar la planificación para el siguiente sprint según lo aprendido. Además, se llevarán a cabo reuniones de seguimiento (Daily Standup) para discutir el progreso y abordar posibles inconvenientes. Este enfoque permite una adaptación continua a medida que el equipo avanza.
@@ -267,6 +271,17 @@ Actividades:
 - Limpieza y preparación de los datos para su posterior análisis.
 - Aplicación de técnicas de modelado de datos para generar insights preliminares.
 - Identificación de posibles problemas o desafíos en los datos y su resolución.
+
+### 3. **Sprint 3 - Data Analytics + ML**
+Duración: 2 semana
+Objetivo: Realizar análisis de datos, crear un dashboard interactivo y desarrollar un modelo de Machine Learning funcional.
+Actividades:
+- Crear un dashboard interactivo con KPIs.
+- Analizar datos y generar insights.
+- Desarrollar y ajustar modelos de Machine Learning.
+- Preparar documentación e informe del análisis y modelos.
+- Implementar un modelo en producción (MVP).
+-Elaborar un storytelling con los resultados y valor de los modelos.
 
 ## **Conclusiones**
 1. El análisis del mercado gastronómico en el estado de Florida ha permitido identificar patrones de comportamiento de los consumidores y el nivel de competitividad entre los restaurantes de comida americana. Este entendimiento es clave para determinar cómo se distribuyen estos negocios, cuáles son sus características más comunes y qué tipo de consumidores atraen, lo cual resulta fundamental para la toma de decisiones estratégicas.
