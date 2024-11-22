@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen del Proyecto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/CSS/style_resumen.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="/googleyelp/static/images/logoSINGHT.png" alt="logo" width="200px" height="200px">
+    </div>
+    <div class="banner">
+      <div class="carousel">
+        <img src="/googleyelp/static/images/DataAnalitics.PNG" alt="Imagen 1" class="active">
+        <img src="/googleyelp/static/images/DataScience.PNG" alt="Imagen 2">
+        <img src="/googleyelp/static/images/DataEnginner.PNG" alt="Imagen 3">
+      </div>
+    </div>
+</header>
+<nav class="navbar navbar-expand-lg">
+  <div class="container justify-content-center">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a href="/googleyelp/" class="btn btn-outline-light nav-link">PROYECTO</a>
+          </li>
+          <li class="nav-item">
+              <a href="/googleyelp/quienes_somos" class="btn btn-outline-light nav-link">QUIENES SOMOS</a>
+          </li>
+          <li class="nav-item">
+              <a href="/googleyelp/resumen" class="btn btn-outline-light nav-link">RESUMEN</a>
+          </li>
+          <li class="nav-item">
+              <a href="/googleyelp/contacto" class="btn btn-outline-light nav-link">CONTACTENOS</a>
+          </li>
+      </ul>
+  </div>
+</nav>
+    <div class="container">
+       <h1 style="text-align: center;"><b>RESUMEN DEL PROYECTO - STAR SOLUTIONS</b></h1>
+       <h2>Contexto</h2>
+       <p>Nuestro cliente nos ha solicitado un análisis enfocado en restaurantes en el estado de Florida, un mercado altamente competitivo donde las opiniones de los consumidores juegan un rol crucial. Este proyecto aprovechará las reseñas en línea para ofrecer insights estratégicos y recomendaciones prácticas, ayudando a nuestros clientes a mejorar la experiencia del cliente y fortalecer su posición en el mercado.</p>
+       <h2>Metodologia de Trabajo</h2>
+       <p>Para este proyecto, se implementará la metodología Scrum, la cual divide el trabajo en partes pequeñas y manejables llamadas "sprints". Cada sprint tiene una duración de dos semana, durante las cuales el equipo se enfocará en completar un conjunto específico de tareas. Al final de cada sprint, se llevará a cabo una reunión de revisión de sprint (sprint review meeting) donde se realizará una demostración de los entregables desarrollados, con el objetivo de recibir retroalimentación y ajustar la planificación para el siguiente sprint según lo aprendido. Además, se llevarán a cabo reuniones de seguimiento (Daily Standup) para discutir el progreso y abordar posibles inconvenientes. Este enfoque permite una adaptación continua a medida que el equipo avanza. Detalles de los Sprints:</p>
+       <h3>Sprint 1: Comprensión del negocio</h3>
+       <p>Duración: 2 semanas. Objetivo: Comprender en profundidad el negocio y los datos involucrados en el proyecto. Actividades:
+         <li>Revisión y análisis detallado de los requisitos del cliente.</li>
+         <li>Investigación sobre las plataformas de reseñas como Google Maps y Yelp.</li>
+         <li>Identificación de posibles fuentes de datos y su relevancia para el proyecto.</li>
+         <li>Establecimiento de objetivos claros para el proyecto y definición de las métricas de éxito.</li>
+       </p>
+       <h3>Sprint 2: Preparación de los datos y modelado</h3>
+       <p>Duración: 2 semanas. Objetivo: Preparar los datos y realizar el modelado necesario para el desarrollo del sistema de recomendación. Actividades:
+         <li>Extracción de datos de las fuentes identificadas.</li>
+         <li>Limpieza y preparación de los datos para su posterior análisis.</li>
+         <li>Aplicación de técnicas de modelado de datos para generar insights preliminares.</li>
+         <li>Identificación de posibles problemas o desafíos en los datos y su resolución.</li>
+       </p>
+       <h3>Sprint 3: Data Analytics + Machine Learning</h3>
+       <p>Duración: 2 semana Objetivo: Realizar análisis de datos, crear un dashboard interactivo y desarrollar un modelo de Machine Learning funcional. Actividades:</p>
+         <li>Crear un dashboard interactivo con KPIs.</li>
+         <li>Analizar datos y generar insights.</li>
+         <li>Desarrollar y ajustar modelos de Machine Learning.</li>
+         <li>Preparar documentación e informe del análisis y modelos.</li>
+         <li>Implementar un modelo en producción (MVP).</li>
+         <li>Elaborar un storytelling con los resultados y valor de los modelos.</li>
+      <h2>Conclusiones</h2>   
+      <p>1.- El análisis del mercado gastronómico en el estado de Florida ha permitido identificar patrones de comportamiento de los consumidores y el nivel de competitividad entre los restaurantes de comida americana. Este entendimiento es clave para determinar cómo se distribuyen estos negocios, cuáles son sus características más comunes y qué tipo de consumidores atraen, lo cual resulta fundamental para la toma de decisiones estratégicas.</p>
+      <p>2.- A partir de los datos obtenidos de Yelp y Google Maps, se logró identificar una gran cantidad de restaurantes de comida americana en Florida, así como analizar sus ubicaciones, popularidad y factores diferenciadores. Esto no solo aporta una visión general de su presencia en el mercado, sino también de las oportunidades y desafíos que enfrentan para captar y retener a los clientes en un sector tan competitivo.</p>
+      <p>3.- El análisis de diferentes escenarios ha permitido evaluar áreas con potencial de crecimiento en el sector gastronómico de Florida. Este estudio revela zonas estratégicas donde la demanda de opciones gastronómicas podría estar insatisfecha, sugiriendo oportunidades para que nuevos restaurantes capturen un mercado desatendido y contribuyan a la diversificación del sector.</p>
+      <p>4.- El desarrollo de un modelo predictivo facilita la identificación de áreas estratégicas para la apertura de nuevos restaurantes, optimizando los recursos y minimizando el riesgo de inversión. Con este modelo, es posible proyectar la probabilidad de éxito en distintas ubicaciones y orientar mejor las decisiones de expansión.</p>
+      <p>5.- La implementación de un proceso de carga incremental en AWS asegura que los datos estén disponibles en la nube de manera segura y eficiente. Esto permite un acceso centralizado y facilita el análisis colaborativo, mejorando la agilidad en la toma de decisiones y optimizando el uso de los datos a lo largo del proyecto.</p>
+      <p>6.- La automatización del proceso de ETL (Extracción, Transformación y Carga) ha mejorado significativamente la eficiencia del proyecto, al reducir los riesgos de errores manuales y optimizar el tiempo del equipo. Esta automatización también permite una mayor escalabilidad del proceso, facilitando futuras actualizaciones y expansiones de datos.</p>
+      <p>7.- Durante el análisis inicial, el equipo mantuvo una constante flexibilidad para adaptarse a nuevos insights o descubrimientos en los datos, lo cual fue esencial para mantener la alineación con los objetivos del proyecto. Este enfoque permitió no solo cumplir con la visión inicial, sino también ajustar la dirección del proyecto para maximizar la satisfacción del cliente y la efectividad del equipo.</p>
+    </div>
+    
+
+       
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

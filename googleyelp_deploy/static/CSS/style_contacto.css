@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f2a47; 
+    color: #8090a0; 
+}
+.mi-form{
+    background-color:  #8090a0; 
+    color: #0f2a47;   
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    flex: 0 0 auto;
+    background-color: #0f2a47; 
+}
+
+.banner {
+flex: 1 1 auto; /* El banner se ajusta al tamaño restante */
+max-width: 1000px;
+height: 200px; /* Agregar altura fija */
+margin: 0 auto;
+background-color: #0f2a47; 
+}
+
+.navbar {
+    color:#fff;
+    background-color:#8090a0; 
+    padding: 10px 0;
+}
+.navbar-bar{
+    margin:0;
+}
+
+.navbar-nav .nav-link {
+    margin: 0 10px;
+}
+
+.navbar-nav .btn {
+    color:#fff;
+    background: #0f2a47; 
+    padding: 5px 15px;
+    border-radius: 5px; /* Para darle forma de botón */
+}
+
+.container {
+    margin-top: 0px;
+}
+
+.container mt-4{
+    color :#8090a0;
+
+}
+.form-select {
+    width: 48%;
+}
+
+.d-flex .form-select:not(:last-child) {
+    margin-right: 4%;
+}
+.carousel {
+position: relative;
+width: 100%;
+height: 100%;
+}
+
+.carousel img {
+width: 100%;
+height: 200px; /* Ajusta la altura si es necesario */
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0;
+transition: opacity 1s ease-in-out;
+}
+
+.carousel img.active {
+opacity: 1;
+}  
+
+button {
+    width: 100%;
+}
