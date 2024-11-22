@@ -247,7 +247,9 @@ El DashBoard consta de tres paginas con las siguientes funciones:
 </p>
 
 ## **Modelo de recomendacion** 
+Desarrollamos una página web interactiva integrada con un backend en FastAPI y un frontend construido con JavaScript, CSS y HTML. La plataforma, diseñada de forma intuitiva, permite a los usuarios explorar restaurantes en todo el estado de Florida, clasificados según calificaciones negativas, positivas o neutras, además de consultar el promedio de estrellas de cada ciudad. Esto facilita la identificación estratégica de ubicaciones ideales para establecer negocios que destaquen por su calidad. La página ofrece visualizaciones claras y atractivas, garantizando una experiencia fluida y eficiente para la toma de decisiones informadas.
 
+[Visita nuestro sitio web](https://www.notona.com.ar/googleyelp/)
 
 <!-- metodología section -->
 ## **🔧 Metodología del Trabajo**
