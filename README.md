@@ -294,5 +294,4 @@ Actividades:
 6. La automatización del proceso de ETL (Extracción, Transformación y Carga) ha mejorado significativamente la eficiencia del proyecto, al reducir los riesgos de errores manuales y optimizar el tiempo del equipo. Esta automatización también permite una mayor escalabilidad del proceso, facilitando futuras actualizaciones y expansiones de datos.
 7. Durante el análisis inicial, el equipo mantuvo una constante flexibilidad para adaptarse a nuevos insights o descubrimientos en los datos, lo cual fue esencial para mantener la alineación con los objetivos del proyecto. Este enfoque permitió no solo cumplir con la visión inicial, sino también ajustar la dirección del proyecto para maximizar la satisfacción del cliente y la efectividad del equipo.
 
-
-
+## ***"¿Sabías que más del 80% de los negocios nuevos fracasan por no elegir la ubicación adecuada?" Nuestro modelo identifica en las ciudades los restaurantes con menor calificación promedio y comentarios negativos, revelando oportunidades únicas y garantizando que tu negocio destaque por su calidad.
